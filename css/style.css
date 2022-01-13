@@ -1,10 +1,11 @@
-/*:root{
-    --vermelho: #E41A15;
-    --branco: #fff;
-}*/
+:root{
+    --roxo_panda: #200028;
+    --verde_panda: #19c779;
+}
 /* ----------------------BODY----------------------- */
 body{
     font-family: 'Lato', sans-serif;
+    background-color: #200028;
 }
 .btn{
     color:var(--branco);
@@ -17,12 +18,10 @@ body{
     border: 1px solid var(--vermelho);
 }
 /* ----------------------HEADER--------------------- */
-header{
-    background-color: var(--vermelho);
-}
+
 /* ----------------------NAV------------------------ */
 nav{
-    background-color: var(--vermelho);
+    background-color: var(--verde_panda);
 }
 .navbar-toggler,
 .navbar-toggler:focus {

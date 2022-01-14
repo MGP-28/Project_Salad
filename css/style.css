@@ -8,85 +8,58 @@ body{
     background-color: #200028;
 }
 /* ----------------------HEADER--------------------- */
-header hr{
-    color: turquoise;
+.img-banner{
+    text-align: center;
+    width: 52%;
+    min-width: 280px;
 }
+.img-name{
+    text-align: center;
+    width: 25%;
+}
+
 /* ----------------------NAV------------------------ */
 nav{
     background-color: var(--roxo_panda);
+    padding: 0px 0px 0px 0px !important;
+    border-bottom: 5px var(--verde_panda) solid;
 }
 
-.nav-edit{
-    color: var(--verde_panda);
-}
-
-.nav-edit-active{
-    color: var(--verde_panda);
-    background-color: var(--verde_panda);
+nav a{
+    padding: 0px 5vw 0px 0px;
+    width: 10vw;
+    height: 3vw;
     border-radius: 5px;
+    vertical-align: middle;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.164);
+}
+
+nav li{
+    font-size: 23px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 1500px) {
+    nav li{
+        font-size: 1.5vw;
+    }
+}
+
+nav li .active{
+    background-color: var(--verde_panda);
 }
 
 /* ----------------------MAIN----------------------- */
-.img_name{
-    margin-top: 5%;
-    text-align: left;
-}
 main p{
     text-align: justify;
     color: white;
 }
-/*main .card{
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-main .card h5{
-    min-height: 50px;
-}
-.badge{
-    background-color: var(--vermelho);
-}
-.carousel{
-    max-width: 700px;
-    margin: 0 auto;
-}
-.carousel-item h5, 
-.carousel-item p{
-    background-color: #e4181578;
-    text-align: center;
-}
-iframe{
-    height: 400px;
-}
-.modal-body{
-    text-align: left;
-}
-/*.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23E41A15' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
 
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23E41A15' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}*/
-.carousel-control-next-icon,
-.carousel-control-prev-icon,
-.carousel-indicators{
-    filter:invert(1);
+.img-name{
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-/* ----------------------FOOTER--------------------- */
-footer{
-    background-color: var(--vermelho);
-    color:var(--branco);
-}
-footer a{
-    color:var(--branco);
-    border: 1px solid var(--branco);
-    background-color: var(--vermelho);
-    padding: 5px;
-    border-radius: 20px;
-}
-footer a:hover{
-    color:var(--vermelho);
-    border: 1px solid var(--vermelho);
-    background-color: var(--branco);
-}*/

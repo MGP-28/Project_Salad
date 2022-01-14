@@ -10,34 +10,35 @@ body{
 /* ----------------------HEADER--------------------- */
 .img-banner{
     text-align: center;
-    width: 52%;
+    width: 40%;
     min-width: 280px;
-}
-.img-name{
-    text-align: center;
-    width: 25%;
 }
 
 /* ----------------------NAV------------------------ */
 nav{
     background-color: var(--roxo_panda);
     padding: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
     border-bottom: 5px var(--verde_panda) solid;
+}
+
+.navbar-toggler{
+    background-color: var(--verde_panda);
 }
 
 nav a{
     padding: 0px 5vw 0px 0px;
     width: 10vw;
-    height: 3vw;
     border-radius: 5px;
     vertical-align: middle;
 }
 
 nav a:hover{
     background-color: rgba(255, 255, 255, 0.164);
+    color: var(--verde_panda);
 }
 
-nav li{
+.navbar li{
     font-size: 23px;
     vertical-align: middle;
 }
@@ -52,14 +53,34 @@ nav li .active{
     background-color: var(--verde_panda);
 }
 
-/* ----------------------MAIN----------------------- */
-main p{
-    text-align: justify;
+nav li .active:hover{
     color: white;
 }
 
+.dropdown-menu{
+    width: 10vw;
+    text-align: center;
+    background-color: var(--roxo_panda);
+    border-style: solid;
+    border-color: var(--verde_panda);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-item{
+    margin: 10px 0px;
+    padding: 20px 0px;
+    color: white;
+    border-radius: 5px;
+}
+
+.dropdown-item:hover{
+    color: white;
+    background-color: var(--verde_panda);
+}
+
+/* ----------------------MAIN----------------------- */
 .img-name{
-    width: 70%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    width: 55%;
+    margin-bottom: 20px;
 }

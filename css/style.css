@@ -1,12 +1,13 @@
 :root{
-    --roxo_panda: #19001f;
-    --verde_panda: #19c779;
-    --roxo_panda_velho: #200028;
+    --panda_purple: #19001f;
+    --panda_green: #1ad481;
+    /*--panda_purple: #200028;*/
+    --panda_green_text: #55fdb2;
 }
 /* ----------------------BODY----------------------- */
 body{
     font-family: 'Lato', sans-serif;
-    background-color: var(--roxo_panda);
+    background-color: var(--panda_purple);
 }
 /* ----------------------HEADER--------------------- */
 .img-banner{
@@ -17,14 +18,14 @@ body{
 
 /* ----------------------NAV------------------------ */
 nav{
-    background-color: var(--roxo_panda);
+    background-color: var(--panda_purple);
     padding: 0px 0px 0px 0px !important;
-    margin: 0px 0px -20px 0px !important;
-    border-bottom: 5px var(--verde_panda) solid;
+    margin: 0px 0px 20px 0px !important;
+    border-bottom: 5px var(--panda_green) solid;
 }
 
 .navbar-toggler{
-    background-color: var(--verde_panda);
+    background-color: var(--panda_green);
 }
 
 nav a{
@@ -36,7 +37,7 @@ nav a{
 
 nav a:hover{
     background-color: rgba(255, 255, 255, 0.164);
-    color: var(--verde_panda);
+    color: var(--panda_green);
 }
 
 .navbar li{
@@ -45,7 +46,7 @@ nav a:hover{
 }
 
 nav li .active{
-    background-color: var(--verde_panda);
+    background-color: var(--panda_green);
     pointer-events: none;
 }
 
@@ -54,11 +55,11 @@ nav li .active:hover{
 }
 
 .dropdown-menu{
-    width: 10vw;
+    width: 12.5vw;
     text-align: center;
-    background-color: var(--roxo_panda);
+    background-color: var(--panda_purple);
     border-style: solid;
-    border-color: var(--verde_panda);
+    border-color: var(--panda_green);
     padding: 10px;
     border-radius: 5px;
 }
@@ -72,7 +73,12 @@ nav li .active:hover{
 
 .dropdown-item:hover{
     color: white;
-    background-color: var(--verde_panda);
+    background-color: var(--panda_green);
+}
+
+.dropdown-item.active-custom{
+    background-color: var(--panda_green);
+    pointer-events: none;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -109,10 +115,45 @@ nav li .active:hover{
 
 /* ----------------------MAIN----------------------- */
 .img-name{
+    margin: -120px 0px 10px 0px !important;
     width: 55%;
-    margin-bottom: 10px;
 }
 
 .carousel-inner{
     margin: 0px !important;
+}
+
+main p{
+    text-align: justify;
+    color: white;
+    font-size: 28px;
+    text-indent: 60px;
+    letter-spacing: 2.5px;
+    line-height: 2;
+}
+
+main div.container-fluid{
+    margin-top: 80px;
+    padding: 0px 60px;
+}
+
+.text-rich{
+    color: var(--panda_green_text);
+    font-weight: 1000;
+}
+
+main .about-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+main .about-img-container{
+    background-color: yellow;
+    object-fit: cover;
+    max-width: 40%;
+}
+
+main .about-text-container{
+    background-color: rgb(255, 0, 0);
+    padding-left: 50px;
 }

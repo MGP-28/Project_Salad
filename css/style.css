@@ -1,5 +1,5 @@
 :root{
-    --roxo_panda: #200028;
+    --roxo_panda: #16001b;
     --verde_panda: #19c779;
 }
 /* ----------------------BODY----------------------- */
@@ -11,14 +11,14 @@ body{
 .img-banner{
     text-align: center;
     width: 40%;
-    min-width: 280px;
+    min-width: 300px;
 }
 
 /* ----------------------NAV------------------------ */
 nav{
     background-color: var(--roxo_panda);
     padding: 0px 0px 0px 0px !important;
-    margin: 0px 0px 0px 0px !important;
+    margin: 0px 0px -20px 0px !important;
     border-bottom: 5px var(--verde_panda) solid;
 }
 
@@ -82,5 +82,5 @@ nav li .active:hover{
 /* ----------------------MAIN----------------------- */
 .img-name{
     width: 55%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }

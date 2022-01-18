@@ -1,11 +1,12 @@
 :root{
-    --roxo_panda: #16001b;
+    --roxo_panda: #19001f;
     --verde_panda: #19c779;
+    --roxo_panda_velho: #200028;
 }
 /* ----------------------BODY----------------------- */
 body{
     font-family: 'Lato', sans-serif;
-    background-color: #200028;
+    background-color: var(--roxo_panda);
 }
 /* ----------------------HEADER--------------------- */
 .img-banner{
@@ -28,7 +29,7 @@ nav{
 
 nav a{
     padding: 0px 5vw 0px 0px;
-    width: 10vw;
+    width: 12.5vw;
     border-radius: 5px;
     vertical-align: middle;
 }
@@ -43,14 +44,9 @@ nav a:hover{
     vertical-align: middle;
 }
 
-@media only screen and (max-width: 1500px) {
-    nav li{
-        font-size: 1.5vw;
-    }
-}
-
 nav li .active{
     background-color: var(--verde_panda);
+    pointer-events: none;
 }
 
 nav li .active:hover{
@@ -79,8 +75,44 @@ nav li .active:hover{
     background-color: var(--verde_panda);
 }
 
+@media only screen and (max-width: 1500px) {
+    nav li{
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    nav li{
+        padding: 3px 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li div{
+        padding: 3px 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li:first-child{
+        padding: 6px 0px 3px 0px;
+    }
+
+    nav li:last-child{
+        padding: 3px 0px 6px 0px;
+    }
+
+    nav li .nav-link{
+        width: 100%;
+    }
+}
+
 /* ----------------------MAIN----------------------- */
 .img-name{
     width: 55%;
     margin-bottom: 10px;
+}
+
+.carousel-inner{
+    margin: 0px !important;
 }

@@ -10,13 +10,17 @@ body{
     background-color: var(--panda_purple);
 }
 /* ----------------------HEADER--------------------- */
+.img-name{
+    margin: -25px 0px 5px 0px !important;
+    width: 55%;
+}
+
+/* ----------------------NAV------------------------ */
 .img-banner{
     text-align: center;
     width: 40%;
     min-width: 300px;
 }
-
-/* ----------------------NAV------------------------ */
 nav{
     background-color: var(--panda_purple);
     padding: 0px 0px 0px 0px !important;
@@ -115,12 +119,9 @@ nav li .active:hover{
 }
 
 /* ----------------------MAIN----------------------- */
-.img-name{
-    margin: -25px 0px 5px 0px !important;
-    width: 55%;
-}
 
-.carousel-inner{
+
+.mgp-index-carousel{
     margin: 0px !important;
     border: solid var(--panda_green) 1px;
     border-radius: 5px;
@@ -204,25 +205,49 @@ main>div>div>div>p>a:hover{
 }
 
 .card{
-    border-style: solid;
-    border-color: var(--panda_green);
+    border: solid var(--panda_green) 1px;
     background-color: var(--panda_purple);
+    min-height: 62vh;
 }
 
-.card-body{
-    color: white;
-    padding: 0px 0px 20px 0px;
+.mgp-carousel{
+    border-bottom: solid var(--panda_green) 2px;
 }
 
 .mgp-card-title{
-    padding: 15px 0px 15px 0px;
+    color: white;
+    height: 0 auto;
+    line-height: 0 auto;
+    padding: 0px !important; /*AQUI*/
 }
 
-.card-body>a{
+.mgp-card-title>p{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    text-indent: 0px;
+    letter-spacing: 2.5px;
+    line-height: auto;
+    margin-bottom: auto;
+}
+
+.mgp-card-link-body{
+    color: white;
+    height: 0 auto;
+    line-height: 0 auto;
+    padding: 0px !important; /*AQUI*/
+}
+
+main>div>div>div>div>a{
     color: var(--panda_green_text);
     border: solid var(--panda_green) 1px;
     border-radius: 5px;
-    padding: 8px;
+    padding: 8px 20px;
+    margin: 0 auto;
+}
+.mgp-card-link:hover{
+    background-color: rgba(128, 128, 128, 0.301);
+    color: white;
 }
 
 @media only screen and (max-width: 991px) {

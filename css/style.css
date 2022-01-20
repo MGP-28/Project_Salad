@@ -50,9 +50,9 @@ nav li .active{
     pointer-events: none;
 }
 
-.active-games{
+a.active-games{
     border: solid var(--panda_green);
-    border-width: 1px;
+    border-width: 2px;
 }
 
 nav li .active:hover{
@@ -86,22 +86,14 @@ nav li .active:hover{
     pointer-events: none;
 }
 
-@media only screen and (max-width: 1500px) {
-    nav li{
-        font-size: 1.5vw;
-    }
-}
-
 @media only screen and (max-width: 991px) {
     nav li{
         padding: 3px 0px;
-        display: flex;
         justify-content: space-around;
     }
 
     nav li div{
         padding: 3px 0px;
-        display: flex;
         justify-content: space-around;
     }
 
@@ -116,6 +108,10 @@ nav li .active:hover{
     nav li .nav-link{
         width: 100%;
     }
+    .dropdown-menu{
+        width: 80vw;
+        margin: 0 auto;
+    }
 }
 
 /* ----------------------MAIN----------------------- */
@@ -126,16 +122,11 @@ nav li .active:hover{
 
 .carousel-inner{
     margin: 0px !important;
+    border: solid var(--panda_green) 1px;
+    border-radius: 5px;
 }
 
-main p{
-    text-align: justify;
-    color: white;
-    font-size: 28px;
-    text-indent: 60px;
-    letter-spacing: 2.5px;
-    line-height: 2;
-}
+
 
 main div.container-fluid{
     margin-top: 80px;
@@ -147,20 +138,69 @@ main div.container-fluid{
     font-weight: 1000;
 }
 
-main .about-img{
+/*main .about-img{
     width: 100%;
     object-fit: cover;
+
+}*/
+
+main>div.about-main{
+    margin-top: 15px;
 }
 
 main .about-img-container{
-    background-color: yellow;
     object-fit: cover;
-    max-width: 40%;
+    padding: 0;
+    min-height: 63vh;
+    background-image: url(/img/carousel/img_insurgency.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid var(--panda_green) 1px;
+    border-radius: 5px;
 }
 
-main .about-text-container{
-    background-color: rgb(255, 0, 0);
+main>div>div>div.about-text-container{
     padding-left: 50px;
+    margin: auto;
+}
+
+main p{
+    text-align: justify;
+    color: white;
+    font-size:1.6vw;
+    text-indent: 60px;
+    letter-spacing: 2.5px;
+    line-height: 2;
+    margin-bottom: 3vw;
+}
+
+@media only screen and (max-width: 1440px) {
+    main p{
+        font-size:23px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    main p{
+        font-size:20px;
+    }
+}
+
+main p:last-child{
+    margin-bottom: 0px;
+}
+
+main>div>div>div>p>a{
+    color: var(--panda_green_text);
+    text-decoration: underline;
+    font-weight: 1000;
+}
+
+main>div>div>div>p>a:hover{
+    color: white;
+    text-decoration: underline;
+    font-weight: 1000;
 }
 
 .card{
@@ -180,8 +220,23 @@ main .about-text-container{
 
 .card-body>a{
     color: var(--panda_green_text);
-    border: solid var(--panda_green);
-    border-width: 1px;
+    border: solid var(--panda_green) 1px;
     border-radius: 5px;
     padding: 8px;
+}
+
+@media only screen and (max-width: 991px) {
+    main .about-img-container{
+        object-fit: cover;
+        padding: 0;
+        min-height: 60vh;
+        background-image: url(/img/carousel/img_insurgency.jfif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main>div>div>div.about-text-container{
+        padding: 50px 40px;
+    }
 }

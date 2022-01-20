@@ -1,7 +1,7 @@
 :root{
     --panda_purple: #19001f;
+    --panda_purple_2: #200028;
     --panda_green: #1ad481;
-    /*--panda_purple: #200028;*/
     --panda_green_text: #55fdb2;
 }
 /* ----------------------BODY----------------------- */
@@ -48,6 +48,11 @@ nav a:hover{
 nav li .active{
     background-color: var(--panda_green);
     pointer-events: none;
+}
+
+.active-games{
+    border: solid var(--panda_green);
+    border-width: 1px;
 }
 
 nav li .active:hover{
@@ -115,7 +120,7 @@ nav li .active:hover{
 
 /* ----------------------MAIN----------------------- */
 .img-name{
-    margin: -120px 0px 10px 0px !important;
+    margin: -25px 0px 5px 0px !important;
     width: 55%;
 }
 
@@ -156,4 +161,27 @@ main .about-img-container{
 main .about-text-container{
     background-color: rgb(255, 0, 0);
     padding-left: 50px;
+}
+
+.card{
+    border-style: solid;
+    border-color: var(--panda_green);
+    background-color: var(--panda_purple);
+}
+
+.card-body{
+    color: white;
+    padding: 0px 0px 20px 0px;
+}
+
+.mgp-card-title{
+    padding: 15px 0px 15px 0px;
+}
+
+.card-body>a{
+    color: var(--panda_green_text);
+    border: solid var(--panda_green);
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 8px;
 }

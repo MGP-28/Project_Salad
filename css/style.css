@@ -120,14 +120,11 @@ nav li .active:hover{
 
 /* ----------------------MAIN----------------------- */
 
-
 .mgp-index-carousel{
     margin: 0px !important;
     border: solid var(--panda_green) 1px;
     border-radius: 5px;
 }
-
-
 
 main div.container-fluid{
     margin-top: 80px;
@@ -138,12 +135,6 @@ main div.container-fluid{
     color: var(--panda_green_text);
     font-weight: 1000;
 }
-
-/*main .about-img{
-    width: 100%;
-    object-fit: cover;
-
-}*/
 
 main>div.about-main{
     margin-top: 15px;
@@ -205,12 +196,19 @@ main>div>div>div>p>a:hover{
 }
 
 .card{
-    border: solid var(--panda_green) 2px;
+    border: solid var(--panda_green) 1.7px;
     background-color: var(--panda_purple);
+    margin: 0px 5px 50px 5px;
+}
+
+@media only screen and (min-width: 1600px){
+    main.games-page>div{
+        padding: 10px 5vw;
+    }
 }
 
 .mgp-carousel{
-    border-bottom: solid var(--panda_green) 2px;
+    border-bottom: solid var(--panda_green) 1.7px;
 }
 
 .mgp-card-title{
@@ -233,9 +231,27 @@ main>div>div>div>p>a:hover{
     line-height: auto;
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1650px) {
+    .mgp-card-title>p{
+        font-size: calc(3px + 1.5vw);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .mgp-card-title>p{
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mgp-card-title>p{
+        font-size: 4vw;
+    }
+}
+
 .mgp-card-link{
     color: var(--panda_green_text);
-    border: solid var(--panda_green) 1px;
+    border: solid var(--panda_green) 2px;
     border-radius: 5px;
     margin: 0px 30px 30px;
 }
@@ -245,7 +261,8 @@ main>div>div>div>p>a:hover{
     height: 100%;
     width: 100%;
     padding: 20px 0px;
-    color: var(--panda_green_text);
+    color: whitesmoke;
+    background-color: rgba(136, 255, 156, 0.075);
 }
 
 .mgp-card-link>a:hover{
@@ -253,28 +270,28 @@ main>div>div>div>p>a:hover{
     color: white;
     text-decoration: none;
 }
-/*here*/
-.mgp-card-link-inactive{
-    color: var(--panda_green_text);
-    border: solid var(--panda_green) 1px;
+
+.mgp-card-link-host{
+    border: solid #fb3839 1px;
     border-radius: 5px;
     margin: 0px 30px 30px;
 }
 
-.mgp-card-link-inactive>a{
+.mgp-card-link-host>a{
     display: block;
     height: 100%;
     width: 100%;
     padding: 20px 0px;
-    color: grey;
+    color: whitesmoke;
+    background-color: rgba(223, 60, 60, 0.096);
 }
 
-.mgp-card-link-inactive>a:hover{
-    background-color: rgba(128, 50, 50, 0.301);
-    color: grey;
+.mgp-card-link-host>a:hover{
+    background-color: rgba(128, 128, 128, 0.301);
+    color: var(--panda_green_text);
     text-decoration: none;
 }
-/*no*/
+
 @media only screen and (max-width: 991px) {
     main .about-img-container{
         object-fit: cover;

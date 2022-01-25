@@ -3,6 +3,7 @@
     --panda_purple_2: #200028;
     --panda_green: #1ad481;
     --panda_green_text: #55fdb2;
+    --panda_green_server_info: #55fdb2;
 }
 /* ----------------------BODY----------------------- */
 body{
@@ -33,20 +34,42 @@ nav{
 }
 
 nav a{
-    padding: 0px 5vw 0px 0px;
     width: 12.5vw;
-    border-radius: 5px;
+    border-radius: 10px;
     vertical-align: middle;
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1300px){
+    nav a{
+        padding: 4px !important;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1100px){
+    nav a{
+        padding: 2px !important;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    nav a{
+        padding: 12px !important;
+    }
 }
 
 nav a:hover{
     background-color: rgba(255, 255, 255, 0.164);
-    color: var(--panda_green);
 }
 
 .navbar li{
     font-size: 23px;
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 1300px){
+    .navbar li{
+        font-size: 1.7vw;
+    }
 }
 
 nav li .active{
@@ -70,24 +93,25 @@ nav li .active:hover{
     border-style: solid;
     border-color: var(--panda_green);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .dropdown-item{
     margin: 10px 0px;
     padding: 20px 0px;
-    color: white;
-    border-radius: 5px;
+    color: rgb(187, 187, 187);
+    border-radius: 10px;
 }
 
 .dropdown-item:hover{
+    background-color: rgba(255, 255, 255, 0.164);
     color: white;
-    background-color: var(--panda_green);
 }
 
 .dropdown-item.active-custom{
     background-color: var(--panda_green);
     pointer-events: none;
+    color: white;
 }
 
 @media only screen and (max-width: 991px) {
@@ -116,6 +140,100 @@ nav li .active:hover{
         width: 80vw;
         margin: 0 auto;
     }
+}
+
+.mgp-server-logo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.mgp-server-title{
+    color: white;
+    border: white solid 1px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-weight: 700;
+    color:rgb(195, 255, 176);
+}
+
+.mgp-server-tag{
+    padding: 18px 0px !important;
+    font-size: 20px;
+    color: white;
+    border-bottom: white solid 1px;
+    background-color: rgba(128, 128, 128, 0.349);
+    border-radius: 5px;
+}
+
+.mgp-server-tag-highlight{
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+.mgp-server-tag-mod{
+    font-weight: 1000;
+    color: var(--panda_green_text);
+}
+
+@media only screen and (max-width: 1500px) {
+    .mgp-server-title{
+        font-size: 3vw;
+        
+    }
+    .mgp-server-tag{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mgp-server-title{
+        font-size: 3vw;
+        
+    }
+    .mgp-server-tag{
+        font-size: 17.5px;
+        color: yellow;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.mgp-server-info-text-title>h3{
+    color: khaki;
+    text-align: right;
+    margin-bottom: 0px;
+    color: var(--panda_green_text);
+}
+
+.mgp-server-info-text>h3{
+    color:olivedrab;
+    text-align: left;
+    vertical-align: center;
+    margin-bottom: 0px;
+}
+
+.mgp-server-info-flag{
+    width: 40px;
+    margin: auto auto auto 0px;
+    padding-left: auto auto auto 0px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 /* ----------------------MAIN----------------------- */
@@ -197,7 +315,7 @@ main>div>div>div>p>a:hover{
 
 .card{
     border: solid var(--panda_green) 1.7px;
-    background-color: var(--panda_purple);
+    background-color: #8686862a;
     margin: 0px 5px 50px 5px;
 }
 
@@ -209,6 +327,12 @@ main>div>div>div>p>a:hover{
 
 .mgp-carousel{
     border-bottom: solid var(--panda_green) 1.7px;
+}
+
+.mgp-carousel-gb{
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 .mgp-card-title{

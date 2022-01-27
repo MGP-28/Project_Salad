@@ -142,99 +142,7 @@ nav li .active:hover{
     }
 }
 
-.mgp-server-logo{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
 
-.mgp-server-title{
-    color: white;
-    border: white solid 1px;
-    border-left: 0px;
-    border-right: 0px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 0px;
-    border-radius: 5px;
-    margin-left: 7px;
-    margin-right: 7px;
-    font-weight: 700;
-    color:rgb(195, 255, 176);
-}
-
-.mgp-server-tag{
-    padding: 18px 0px !important;
-    font-size: 20px;
-    color: white;
-    border-bottom: white solid 1px;
-    background-color: rgba(128, 128, 128, 0.349);
-    border-radius: 5px;
-}
-
-.mgp-server-tag-highlight{
-    font-weight: 1000;
-    text-decoration: underline;
-}
-
-.mgp-server-tag-mod{
-    font-weight: 1000;
-    color: var(--panda_green_text);
-}
-
-@media only screen and (max-width: 1500px) {
-    .mgp-server-title{
-        font-size: 3vw;
-        
-    }
-    .mgp-server-tag{
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .mgp-server-title{
-        font-size: 3vw;
-        
-    }
-    .mgp-server-tag{
-        font-size: 17.5px;
-        color: yellow;
-        max-width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-.mgp-server-info-text-title>h3{
-    color: khaki;
-    text-align: right;
-    margin-bottom: 0px;
-    color: var(--panda_green_text);
-}
-
-.mgp-server-info-text>h3{
-    color:olivedrab;
-    text-align: left;
-    vertical-align: center;
-    margin-bottom: 0px;
-}
-
-.mgp-server-info-flag{
-    width: 40px;
-    margin: auto auto auto 0px;
-    padding-left: auto auto auto 0px;
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
 
 /* ----------------------MAIN----------------------- */
 
@@ -430,4 +338,102 @@ main>div>div>div>p>a:hover{
     main>div>div>div.about-text-container{
         padding: 50px 40px;
     }
+
+    main .about-img-container.show-wide{
+        display:none;  
+    }
+}
+
+.mgp-server-logo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.mgp-server-title{
+    color: white;
+    border: white solid 1px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    font-weight: 700;
+    color:rgb(195, 255, 176);
+}
+
+.mgp-server-tag{
+    padding: 18px 0px !important;
+    font-size: 20px;
+    color: white;
+    border-bottom: white solid 1px;
+    background-color: rgba(128, 128, 128, 0.349);
+    border-radius: 5px;
+}
+
+.mgp-server-tag-highlight{
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+.mgp-server-tag-mod{
+    font-weight: 1000;
+    color: var(--panda_green_text);
+}
+
+@media only screen and (max-width: 1500px) {
+    .mgp-server-title{
+        font-size: 3vw;
+        
+    }
+    .mgp-server-tag{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mgp-server-title{
+        font-size: 3vw;
+        
+    }
+    .mgp-server-tag{
+        font-size: 17.5px;
+        color: yellow;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.mgp-server-info-text-title>h3{
+    color: khaki;
+    text-align: right;
+    margin-bottom: 0px;
+    color: var(--panda_green_text);
+}
+
+.mgp-server-info-text>h3{
+    color:olivedrab;
+    text-align: left;
+    vertical-align: center;
+    margin-bottom: 0px;
+}
+
+.mgp-server-info-flag{
+    width: 40px;
+    margin: auto auto auto 0px;
+    padding-left: auto auto auto 0px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }

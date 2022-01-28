@@ -228,7 +228,7 @@ main>div>div>div>p>a:hover{
 }
 
 @media only screen and (min-width: 1600px){
-    main.games-page>div{
+    main.card-page>div{
         padding: 10px 5vw;
     }
 }
@@ -344,9 +344,20 @@ main>div>div>div>p>a:hover{
     }
 }
 
+main.server-page>div{
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+@media only screen and (min-width: 1600px){
+    main.server-page>div>div{
+        padding: 0px 50px !important;
+    }
+}
+
 .mgp-server-logo{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px;
     background-color: white;
     display: block;
@@ -357,17 +368,18 @@ main>div>div>div>p>a:hover{
 
 .mgp-server-title{
     color: white;
-    border: white solid 1px;
+    border: var(--panda_green_server_info) solid 1px;
+    border-radius: 3px;
     border-left: 0px;
     border-right: 0px;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-bottom: 0px;
-    border-radius: 5px;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-left: 0px;
+    margin-right: 0px;
     font-weight: 700;
-    color:rgb(195, 255, 176);
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.13);
 }
 
 .mgp-server-tag{
@@ -381,12 +393,26 @@ main>div>div>div>p>a:hover{
 
 .mgp-server-tag-highlight{
     font-weight: 1000;
-    text-decoration: underline;
 }
 
 .mgp-server-tag-mod{
     font-weight: 1000;
     color: var(--panda_green_text);
+}
+
+.mgp-server-info-text-title>h3{
+    color: var(--panda_green_text);
+    text-align: right;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+
+.mgp-server-info-text>h3{
+    color:white;
+    text-align: left;
+    vertical-align: center;
+    margin-bottom: 0px;
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -397,6 +423,12 @@ main>div>div>div>p>a:hover{
     .mgp-server-tag{
         font-size: 16px;
     }
+    .mgp-server-info-text-title>h3{
+        font-size: calc(10px + 1.1vw);
+    }
+    .mgp-server-info-text>h3{
+        font-size: calc(10px + 1.1vw);
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -406,25 +438,12 @@ main>div>div>div>p>a:hover{
     }
     .mgp-server-tag{
         font-size: 17.5px;
-        color: yellow;
-        max-width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
-}
-
-.mgp-server-info-text-title>h3{
-    color: khaki;
-    text-align: right;
-    margin-bottom: 0px;
-    color: var(--panda_green_text);
-}
-
-.mgp-server-info-text>h3{
-    color:olivedrab;
-    text-align: left;
-    vertical-align: center;
-    margin-bottom: 0px;
+    .mgp-server-info-text-title>h3{
+        font-size: 20px;
+    }
 }
 
 .mgp-server-info-flag{
@@ -436,4 +455,25 @@ main>div>div>div>p>a:hover{
     top: 0;
     bottom: 0;
     margin: auto;
+}
+
+.mgp-server-info-link{
+    margin: calc(15px + 3vh) 0px calc(30px + 3vh) 0px!important;
+}
+
+.mgp-server-info-link>a{
+    color: whitesmoke;
+    border: solid var(--panda_green) 2px;
+    border-radius: 5px;
+    background-color: rgba(136, 255, 156, 0.075);
+    max-width: 50%;
+    margin: 0 auto;
+    padding: calc(5px + 2vh) 20% calc(5px + 2vh) 20% !important;
+    font-size: 1.5rem;
+}
+
+.mgp-server-info-link>a:hover{
+    background-color: rgba(128, 128, 128, 0.301);
+    color: white;
+    text-decoration: none;
 }

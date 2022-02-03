@@ -170,7 +170,7 @@ main .about-img-container{
     object-fit: cover;
     padding: 0;
     min-height: 63vh;
-    background-image: url(/img/carousel/img_insurgency.jfif);
+    background-image: url(https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/09/Insurgency-Sandstorm_4-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -329,7 +329,7 @@ main>div>div>div>p>a:hover{
         object-fit: cover;
         padding: 0;
         min-height: 60vh;
-        background-image: url(/img/carousel/img_insurgency.jfif);
+        background-image: url(https://news.xbox.com/en-us/wp-content/uploads/sites/2/2021/09/Insurgency-Sandstorm_4-1.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
